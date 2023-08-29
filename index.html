@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch a sketch</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- sketch settings -->
+    <div class="settings-container">
+      <div class="size-control">
+        <label class="number-label" for="gridZise">Enter the size of grid</label>
+        <input type="number" id="gridZise" class="input" value="16" min="16" max="64">
+      </div>
+      <div class="color-control">
+        <label class="color-label" for="colorWell">Select a Color :</label>
+        <input class="color-picker" type="color" id="colorWell" value="#333333">
+      </div>
+      <div class="button-container">
+        <button class="btn color-btn">Colorful</button>
+        <button class="btn eraser-btn">Eraser</button>
+        <button class="btn clear-btn">Clear</button>
+      </div>
+    </div>
+    <!-- sketch board -->
+    <div class="sketch-container">
+      <div class="sketch-wrapper">
+        <div class="sketch-heading">
+          <p class="sketch-subtitle">magic</p>
+          <h1 class="sketch-title">Etch A Sketch &reg;</h1>
+          <p class="sketch-subtitle">screen</p>
+        </div>
+        <div class="grid-container">
+          <div id="grid"></div>
+        </div>
+        <div class="circle">
+          <div class="right-circle"></div>
+          <div class="left-circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
